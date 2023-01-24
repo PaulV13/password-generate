@@ -1,0 +1,166 @@
+body {
+  background-color: #101014;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 50px;
+}
+
+.strength,
+.title {
+  color: #63606F;
+}
+
+.copy_icon {
+  fill: #A5FFAF;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+}
+
+.password-generate {
+  width: 320px;
+  background-color: #24232A;
+  color: #fff;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  width: 320px;
+  background-color: #24232A;
+  padding: 16px;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.card-character-length {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-character-number {
+  color: #A5FFAF;
+}
+
+.card-strength {
+  background-color: #18171E;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  border-radius: 2px;
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.card-strength-icons {
+  display: flex;
+}
+
+.card-strength-icons div{
+  margin-right: 5px;
+}
+
+.strength-icon {
+  display: inline-block;
+  width: 6px;
+  height: 14px;
+  background: rgb(252, 216, 16);
+  margin: 2px;
+  border: 1px solid #fff;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 0.15em;
+  margin-right: 0.5em;
+  border: 0.15em solid #A5FFAF;
+  outline: none;
+  cursor: pointer;
+}
+
+input:checked {
+  background-color: #A5FFAF;
+  position: relative;
+}
+
+input:checked::before {
+  content: "\2714";
+  font-size: 1em;
+  color: #fff;
+  position: absolute;
+  right: 0px;
+  top: 2px;
+}
+
+.btn-generate {
+  width: 100%;
+}
+
+button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #A5FFAF;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+button:hover,
+button:focus {
+  background-color: #A5FFAF;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  background-color: #A5FFAF;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
