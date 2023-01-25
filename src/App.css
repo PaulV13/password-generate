@@ -14,7 +14,12 @@ body {
   margin-bottom: 50px;
 }
 
-.strength,
+.strength {
+  font-size: 0.8em;
+  color: #63606F;
+  line-height: normal;
+}
+
 .title {
   color: #63606F;
 }
@@ -26,8 +31,14 @@ body {
   cursor: pointer;
 }
 
+.check_icon { 
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
 .password-generate {
   width: 320px;
+  height: 60px;
   background-color: #24232A;
   color: #fff;
   padding: 16px;
@@ -212,12 +223,17 @@ input[type="checkbox"]:checked::before {
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
-.btn-generate:hover {
-  transform: translateY(-1px);
-}
-
 .btn-generate:active {
   background-color: #A5FFAF;
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
+}
+
+.btn-generate:disabled {
+  background-color: rgb(77, 77, 77);
+  color: rgb(184, 184, 184);
+  opacity: 0.5;
+  cursor: auto;
+  border: none;
+  transform: none;
 }
