@@ -129,7 +129,7 @@ function App() {
     <div className="container">
       <h2 className="title">Password Generator</h2>
       <section className="password-generate">
-        <div>{password}</div>
+        <div className="password">{password}</div>
         {password && (
           <CopyIcon className="copy_icon" onClick={copyToCliboard} />
         )}
@@ -155,7 +155,7 @@ function App() {
             onChange={selectedOptions}
             value="uppercase"
           />
-          <label htmlFor="checkbox-uppercase">Include Uppercase letters</label>
+          <label htmlFor="checkbox-uppercase">Include Uppercase Letters</label>
         </div>
         <div className="checkbox-container">
           <input
@@ -164,7 +164,7 @@ function App() {
             onChange={selectedOptions}
             value="lowercase"
           />
-          <label htmlFor="checkbox-lowercase">Include Lowercase letters</label>
+          <label htmlFor="checkbox-lowercase">Include Lowercase Letters</label>
         </div>
         <div className="checkbox-container">
           <input
